@@ -77,7 +77,7 @@ io.sockets.on('connection', function(socket) {
         /** If the username was valid. */
         if (isUsernameValid(data)) {
             /** Tell the client to proceed to the chatroom. */
-            socket.emit('joinReq', { username: data, success: true, users: users });
+            socket.emit('joinReq', { username: data, success: true, users: users, msgs: messages });
             /** Tell all the other clients that someone has joined the chat. */
             socket.broadcast.emit('joined', { username: data});
         }
@@ -94,6 +94,6 @@ io.sockets.on('connection', function(socket) {
         /** Broadcast the message to all other clients. */
         socket.broadcast.emit('messages', { username: data.username, msg: data.msg, timestamp: timestamp });
         /** Temporarily store the message. */
-        storeMessage(data.username, timestamp, data);
+        storeMessage(data.username, timestamp, data.msg);
     });
 });

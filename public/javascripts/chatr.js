@@ -62,6 +62,9 @@ $(function(){
                     $('#userbox').append("<p>" + data.users[i].name + "</p>")
                 }
             }
+            for (var i = 0; i < data.msgs.length; i++) {
+                writeMsgToScreen(data.msgs[i].name, data.msgs[i].timestamp, data.msgs[i].msg);
+            }
             $('#preChat').hide("fast");
             $('#main').show("fast");
         }
