@@ -1,0 +1,114 @@
+body {
+
+    padding: 50px;
+
+}
+
+a {
+    color: #00B7FF;
+}
+
+p {
+    font-size: 16px;
+}
+
+p span.username {
+    font-weight: 700;
+}
+
+h3 {
+    margin: 0 0 10px !important;
+}
+
+.me {
+    font-weight: 700;
+}
+
+.alertMsg {
+    color: #d2322d;
+}
+
+.userJoined {
+    color: rgba(30, 48, 66, 0.42);
+}
+
+#main {
+    display: none;
+}
+
+.box {
+    border: solid 2px #486380;
+    border-radius: 3px;
+    height: 300px;
+    padding: 10px;
+}
+
+#chatbox {
+    width: 100%;
+    margin-bottom: 5px;
+    overflow: auto;
+}
+
+.inputBox {
+    border-radius: 3px;
+    border: solid 2px #486380;
+    color: #486380;
+    box-shadow: none;
+    width: 100%;
+    height: 22px;
+    font-size: 16px;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+
+.inputBox[type=text] {
+    padding: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.inputBox:focus,
+.inputBox:hover,
+.inputBox:active {
+    background-color: rgba(0, 61, 245, 0.2);
+    outline-width: 0;
+}
+
+::-webkit-input-placeholder /* WebKit browsers */ {
+    color: #486380;
+}
+:-moz-placeholder /* Mozilla Firefox 4 to 18 */ {
+    color: #486380;
+}
+::-moz-placeholder /* Mozilla Firefox 19+ */ {
+    color: #486380;
+}
+:-ms-input-placeholder /* Internet Explorer 10+ */ {
+    color: #486380;
+}
+
+.chatBtn {
+    background: #486380;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+.chatBtn:hover {
+    background: #283e55;
+}

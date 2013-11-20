@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/javascripts/chatr.js"></script>
+</head>
+<body>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>ChatR - a simple chat application</h1>
+    </div>
+</div>
+
+<div id="preChat" class="row">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="alertMsg"></h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <input type="text" class="inputBox" placeholder="Enter username">
+        </div>
+        <div class="col-md-2">
+            <button class="chatBtn">Submit!</button>
+        </div>
+    </div>
+</div>
+
+<section id="main">
+<div class="row">
+    <div class="col-md-6">
+        <div id="chatbox" class="box">
+            <h3>Messages:</h3>
+
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div id="userbox" class="box">
+            <h3>Users:</h3>
+
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <input type="text" class="inputBox" id="chatInput">
+    </div>
+    <div class="col-md-2">
+        <button class="chatBtn" id="sendMsg">Send!</button>
+    </div>
+</div>
+</section>
+</body>
+</html>
