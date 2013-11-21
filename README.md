@@ -15,3 +15,7 @@ express globally: npm install -g express
 
 
 Currently only using arrays to store users and messages.
+
+Application running at: http://stark-sea-3686.herokuapp.com/ (it might take some seconds for the heroku worker to get started).
+
+
