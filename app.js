@@ -11,6 +11,12 @@ var io = require('socket.io').listen(server);
 // Reduce logging by socket.io. Comment if you want socket.io logging to terminal.
 io.set('log level', 1);
 
+// Heroku specific requirements
+io.configure(function() {
+	io.set("transports", ["xhr-polling"]);
+	io.set("polling duration", 10);
+});
+
 // Configuration
 app.configure(function() {
     // all environments

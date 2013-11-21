@@ -1,5 +1,5 @@
 $(function(){
-    var server = io.connect('http://localhost:3000');
+    var server = io.connect(window.location.hostname);
     var username = "";
     console.log("Connected to the ChatR server!");
 
