@@ -14,8 +14,14 @@ Express.js - http://expressjs.com/ (If you get an error trying to run the app, y
 express globally: npm install -g express
 
 
-Currently only using arrays to store users and messages.
-
 Application running at: http://stark-sea-3686.herokuapp.com/ (it might take some seconds for the heroku worker to get started).
 
 
+TODO
+----
+
+- Security.
+- Temporary storage be changed to permanent storage.
+- Remove clients when they leave the chat.
+- Under some circumstances outputting a message twice.
+- Extra '\n' when using Internet Explorer?
